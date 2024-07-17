@@ -1,8 +1,11 @@
 <?php 
 get_header(); 
-// Template Name :Front Page 
+// Template Name:Front Page 
 ?>
-
+<div id="hero">
+<img src="<?php echo get_template_directory_uri(); ?>/images/yellowstone-header-home.jpg" alt="Yellowstone">
+</div>
+<!-- end hero -->
 <div id="wrapper">
 <!-- the index.php is assigned to the blog page!!! -->
 <!-- our question of the day is If we have any posts or pages, show them!!!-->

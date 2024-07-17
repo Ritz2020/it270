@@ -1,7 +1,10 @@
 <?php 
 get_header(); 
-// Template Name :Tours
+// Template Name:Tours
 ?>
+<div id="hero">
+<img src="<?php echo get_template_directory_uri(); ?>/images/yellowstone-inner.jpg" alt="Yellowstone">
+</div>
 
 <div id="wrapper">
 <main>

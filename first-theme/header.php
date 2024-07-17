@@ -9,9 +9,10 @@
 <?php wp_head();  ?> 
 <!-- this function will alow your plugin information, i.e. stylesheets, javastript, etc to display BEFORE the closing head  -->
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(! is_front_page() ? "inner-page" : "" ); ?>>
 <header>
 <div id="top">
+    <?php get_search_form(); ?>
 </div> 
  <!--end top  -->
 <div id="inner-header">
@@ -32,8 +33,5 @@ $args_primary = array(
 </div>
 <!-- end inner-header -->
 
-<div id="hero">
 
-</div>
-<!-- end hero -->
 </header>

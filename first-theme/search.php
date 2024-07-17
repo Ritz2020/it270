@@ -2,14 +2,20 @@
 <!-- the index.php is assigned to the blog page!!! -->
 <!-- blog container for all of our posts -->
 <!-- our question of the day is If we have any posts or pages, show them!!!-->
-<div id="hero">
-<img src="<?php echo get_template_directory_uri(); ?>/images/yellowstone-inner.jpg" alt="Yellowstone">
-</div>
 <div id="wrapper">
+    <!-- we will add a happy picture here!!!! -->
 <main>
 
 <?php if (have_posts() ) : ?>
 <!--we need to show the posts by using a while loop in the world of PHP!!!  -->
+<!-- we will add a happy picture here!!!! -->
+<h2>Search Results For: <?php echo get_search_query() ;?> </h2>
+
+<!-- we will add how many posts or pages exist -->
+<p>Our findings for
+<?php /* Search Count */
+$allsearch = new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('<span class="search-terms">'); echo $key; _e('</span>'); _e(' &mdash; '); echo $count . ' '; _e('articles/pages'); wp_reset_query(); ?></p>
+
 <?php while(have_posts()) : the_post();?>
 <article class="post">
 <h2 class="title">
@@ -45,7 +51,7 @@
 <?php else : ?>
 <h2>
  <!-- <php echo  wpautop('Sorry, no posts were found!'); >  -->
-Search Results:
+No Content For: <?php echo get_search_query() ;?>
 </h2>
 <p>
     Sorry, we could not find anything regarding your search terms. Would you like to search again, using different keywords?
@@ -55,7 +61,7 @@ Search Results:
 <?php endif; ?>
 </main>
 <aside>
-<p>This is my index.php page!</p>
+<p>This is my search.php page!</p>
 </aside>
 
 </div>
