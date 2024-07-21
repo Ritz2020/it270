@@ -38,7 +38,7 @@
 <!-- <aside>
 
 </aside> -->
-
+<?php get_sidebar(); ?>
 </div>
 <!-- close wrapper -->
 

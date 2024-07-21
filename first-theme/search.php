@@ -60,10 +60,10 @@ No Content For: <?php echo get_search_query() ;?>
 
 <?php endif; ?>
 </main>
-<aside>
+<!-- <aside>
 <p>This is my search.php page!</p>
-</aside>
-
+</aside> -->
+<?php get_sidebar(); ?>
 </div>
 <!-- close wrapper -->
 

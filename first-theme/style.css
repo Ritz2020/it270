@@ -11,7 +11,9 @@ Date:July 2024
 }
 
 body{
-    background-color:lavenderblush;
+    background-color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
 }
 
 header{
@@ -20,6 +22,8 @@ header{
     left:0;
     top:0;
     width:100%;
+    padding:0 0 10px 0;
+    border-bottom: 1px solid #888;
 }
 
 #top {
@@ -34,12 +38,23 @@ header{
     max-width:1200px;
     margin:0 auto;
     /* height:100px; */
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     padding:10px 0;
     clear:both;
 }
 
 /* thisis our background image!!!*/
+
+#wrapper {
+    max-width: 1200px;
+    margin:20px auto 40px auto;
+}
+
+.error404 #wrapper,
+.search #wrapper {
+    margin:140px auto 0 auto;
+
+}
 
 #hero {
     
@@ -51,7 +66,7 @@ header{
 
     background-attachment: fixed;
     background-size: 100%;
-    background-position: 0 100px;
+    background-position: 0 110px;
     min-height:550px;
     max-width:100%;
     background-repeat: no-repeat;
@@ -62,27 +77,14 @@ header{
 
     background-attachment: fixed;
     background-size: 100%;
-    background-position: 0 100px;
-    min-height:350px;
+    background-position: 0 110px;
+    min-height:370px;
     max-width:100%;
     background-repeat: no-repeat;
 }
 
 #hero img {
     display:none;
-}
-
-
-
-#wrapper {
-    max-width: 1200px;
-    margin:20px auto;
-}
-
-.error404 #wrapper,
-.search #wrapper {
-    margin:140px auto 0 auto;
-
 }
 
 main {
@@ -93,14 +95,59 @@ main {
 aside {
     width:35%;
     float:right;
-    background-color: azure;
-    height:400px;
 }
 
 footer {
     background-color: #ccc;
-    height: 300px;
+    /* height: 300px; */
+    padding-top: 20px;
     clear:both;
+}
+
+.inner-footer {
+    max-width:1200px;
+    margin:0 auto;
+    /* background-color:tan; */
+    padding:10px 0;
+    clear:both;
+
+}
+
+.inner-footer ul {
+    height:60px;
+    line-height: 60px;
+    font-size: .875em;
+    color:#666;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.inner-footer a {
+    color: #666;
+}
+
+.inner-footer li {
+    float:left;
+    margin-right:25px;
+}
+
+.inner-footer .third {
+    text-align:center;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.third {
+    width:31.91%;
+    float:left;
+    margin-right:2.12%;
+    padding:0 1%;
+}
+
+.third:last-of-type{
+margin-right:0;
 }
 
 .nav-button {
@@ -144,6 +191,7 @@ footer {
 #site-navigation li:hover .sub-menu li{
    margin-left: 0;
    float:none;
+   line-height: 1.4;
 }
 
 
@@ -155,7 +203,7 @@ footer {
 
 .not-thumbnail img {
     width:500px;
-    height:100px;
+    height:100%;
     margin-right: 15px;  
 }
 
@@ -183,10 +231,16 @@ footer {
 
 p {
     margin-bottom:20px;
+    line-height: 1.4;
+}
+
+p + .block{
+    margin:-10px 0 10px 0;
 }
 
 .title {
     font-size:2em;
+    margin-bottom: 10px;
 }
 
 .meta span {
@@ -201,6 +255,78 @@ p {
 .block {
     display:block;
     font-style: italic;
+}
+
+img{
+    max-width: 100%;
+}
+
+main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+width:100%;
+height:auto;
+margin-bottom:15px;
+}
+
+.inner-widget h3{
+    background-color: brown;
+    font-size: 1.4em;
+    padding:3px;
+    color:#fff;
+    margin-bottom: 10px;
+}
+/* inner-widget is for About page */
+
+.inner-tours h3 {
+    font-size: 1.4em;
+    color:brown;
+}
+
+.inner-tours {
+    background:#eee ;
+    padding: 3%;
+}
+
+aside ul {
+    margin-left: 5%;
+    margin-bottom: 12px;
+    list-style-type: none;
+}
+.home h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+h1, h2, h3{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer h2 {
+    text-align: center;
+    margin-bottom:11px;
+    font-size: 2.4em;
+}
+
+a {
+    color:brown;
+}
+
+.third span a {
+    display:block;
+    color:brown;
+    font-style:italic;
+    margin-top:5px;
+    font-size:1.1em;
+}
+
+.row p{
+    font-size:.92em;
+}
+
+.third h3 {
+font-size: 1.8em;
+margin-bottom: 10px;
 }
 
 /* comment form css */
@@ -238,6 +364,17 @@ label{
 }
 
 @media screen and (max-width:1450px){
+
+    #inner-header {
+        padding:10px 25px;
+    }
+    
+    
+    #wrapper {
+        max-width: 1200px;
+        margin:25px auto 25px auto;
+        padding:25px;
+    }
 
     .home #hero {
         background-image: none;
