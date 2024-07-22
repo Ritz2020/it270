@@ -286,6 +286,13 @@ margin-bottom:15px;
     padding: 3%;
 }
 
+.inner-specials {
+    margin-top:20px;
+    background-color: rgb(184, 169, 142);
+    padding:3%;
+}
+
+
 aside ul {
     margin-left: 5%;
     margin-bottom: 12px;
