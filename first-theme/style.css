@@ -137,6 +137,7 @@ footer {
 
 .row {
     overflow: hidden;
+    margin-bottom:20px;
 }
 
 .third {
@@ -148,6 +149,19 @@ footer {
 
 .third:last-of-type{
 margin-right:0;
+}
+
+#wrapper .third {
+    padding:0;
+}
+
+.col8 {
+    float:left;
+    width:48.93%;
+}
+
+.col8:last-of-type {
+    float:right;
 }
 
 .nav-button {
@@ -259,6 +273,7 @@ p + .block{
 
 img{
     max-width: 100%;
+    height:auto;
 }
 
 main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
@@ -292,7 +307,10 @@ margin-bottom:15px;
     padding:3%;
 }
 
-
+.inner-buy {
+    clear:both;
+    background-color: #eee;
+}
 aside ul {
     margin-left: 5%;
     margin-bottom: 12px;
@@ -305,14 +323,26 @@ aside ul {
 }
 
 h1, h2, h3{
-    color: brown;
+    color:#574e21;;
     font-family: 'Times New Roman', Times, serif;
+   
+}
+
+
+.home h2{
+    text-align:center;
+    font-size: 2.4em;
+    color:#A69851;
 }
 
 footer h2 {
     text-align: center;
     margin-bottom:11px;
     font-size: 2.4em;
+}
+
+h3 {
+    color:#d47509
 }
 
 a {
@@ -331,10 +361,12 @@ a {
     font-size:.92em;
 }
 
+.col8 h3,
 .third h3 {
 font-size: 1.8em;
 margin-bottom: 10px;
 }
+
 
 /* comment form css */
 

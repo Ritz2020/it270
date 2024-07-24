@@ -36,7 +36,7 @@ get_header();
 </aside>
 </div>
 <!-- close wrapper -->
-
+<?php dynamic_sidebar('sidebar-buy'); ?>
 <?php
 get_footer();
 ?>

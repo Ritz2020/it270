@@ -85,6 +85,14 @@ function my_theme_scripts() {
           'after_title' => '</h3>'
           ));
 
+        register_sidebar(array(
+          'name' => 'Sidebar Buy',
+          'id' => 'sidebar-buy',
+          'before_widget' => '<div class="inner-buy">',
+          'after_widget' => '</div>',
+          'before_title' => '<h2>',
+          'after_title' => '</h2>'
+           ));
 
     } // end function init widgets
     // add action AFTER the function
