@@ -22,10 +22,22 @@
 </div>
 <!-- close meta -->
 
+<div class="not-thumbnail">
+    <?php if(has_post_thumbnail()): ?>
+    
+    <?php the_post_thumbnail(); ?>
+    
+    <?php endif ?>
+</div>
+<!-- end thumbnail -->
+
 <?php the_content() ; ?>
 
 
 </article>
+<span class="next-previous">
+<?php (previous_post_link()) ? '%link' : ''; ?> &nbsp; &nbsp; <?php (next_post_link()) ? '%link' : ''; ?>
+</span>
 <?php endwhile ; ?>
 
 <?php else : ?>

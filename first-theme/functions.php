@@ -125,7 +125,7 @@ function diwp_get_list_of_shortcodes(){
 add_shortcode('get-shortcode-list', 'diwp_get_list_of_shortcodes');
  
 function covid_disclaimer() {
-  return '<p><small>Before you purchase your tickets, please check with everyone that you can think of to go (Covid-free), because these tickets are not refundable</samall></p>';
+  return '<p><small>Before you purchase your tickets, please check with everyone that you can think of to go (Covid-free), because these tickets are not refundable</small></p>';
 }
 
 add_shortcode('disclaimer','covid_disclaimer');
@@ -177,3 +177,15 @@ add_shortcode('current_date', 'today_date');
 
 
 add_filter( 'widget_text' , 'do_shortcode' );
+
+remove_filter('the_content', 'wpautop');
+
+// page slug body class
+function add_slug_body_class( $classes ) {
+  global $post;
+  if ( isset( $post ) ) {
+  $classes[] =$post->post_name;
+  }
+  return $classes;
+  }
+  add_filter( 'body_class', 'add_slug_body_class' );

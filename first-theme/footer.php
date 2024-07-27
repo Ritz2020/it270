@@ -9,8 +9,8 @@
 </li>
 <li>All Rights Reserver</li>	
 <li><a href="">Web Design by Yan</a></li>
-<li><a href="">Valid HTML</a></li>
-<li><a href="">Valid CSS</a></li>
+<li><a id="html-checker" href="#">Valid HTML</a></li>
+<li><a id="css-checker" href="#">Valid CSS</a></li>
 </ul>
 </div>
 </footer>
@@ -21,5 +21,12 @@ $(document).ready(function(){
 			});    
 		});
 </script>
+<script>
+            document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+            document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+<?php wp_footer(); ?>  
+<!-- Prints scripts or data before the closing body tag  -->
+ 
 </body>
 </html>
